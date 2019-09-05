@@ -1,13 +1,3 @@
-/*
- * Estructura de Dades. Laboratori.
- * Pràctica 3: Arbres binaris
- */
-
-/* 
- * File:    AVLMovieFinder.cpp
- * Authors: Carla Morral, Oscar Lacasta
- */
-
 #include <string>
 #include <sstream>
 #include <fstream>
