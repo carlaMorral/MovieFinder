@@ -1,13 +1,3 @@
-/*
- * Estructura de Dades. Laboratori.
- * Pràctica 3: Arbres binaris
- */
-
-/* 
- * File:    BalancedBST.h
- * Authors: Carla Morral, Oscar Lacasta
- */
-
 #ifndef BALANCEDBST_H
 #define BALANCEDBST_H
 
