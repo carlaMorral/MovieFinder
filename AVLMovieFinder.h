@@ -1,13 +1,3 @@
-/*
- * Estructura de Dades. Laboratori.
- * Pràctica 3: Arbres binaris
- */
-
-/* 
- * File:    BSTMovieFinder.h
- * Authors: Carla Morral, Oscar Lacasta
- */
-
 #ifndef AVLMOVIEFINDER_H
 #define AVLMOVIEFINDER_H
 
