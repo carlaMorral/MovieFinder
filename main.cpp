@@ -1,13 +1,3 @@
-/*
- * Estructura de Dades. Laboratori.
- * Pràctica 3: Arbres binaris
- */
-
-/* 
- * File:    main.cpp
- * Authors: Carla Morral, Oscar Lacasta
- */
-
 #include <ctime>
 #include <iostream>
 #include <string>
@@ -20,10 +10,7 @@
 
 using namespace std;
 
-/*
- * Funcions implementades
- */
-
+/*Get data*/
 void seleccionarFitxer(BSTMovieFinder* bst, string nomFitxer) {
     clock_t t;
     
@@ -40,6 +27,7 @@ void seleccionarFitxer(BSTMovieFinder* bst, string nomFitxer) {
     }
 }
 
+/*Get data*/
 void seleccionarFitxer(AVLMovieFinder* avl, string nomFitxer) {
     clock_t t;
     
@@ -56,6 +44,7 @@ void seleccionarFitxer(AVLMovieFinder* avl, string nomFitxer) {
     }
 }
 
+/*Read data*/
 void llegirFitxerCerca(const BSTMovieFinder& bst) {
     ifstream file;
     string line, fileName = "data/cercaPelicules.txt";
@@ -76,14 +65,15 @@ void llegirFitxerCerca(const BSTMovieFinder& bst) {
         }
         t = (clock() - t);
         file.close();
-        cout << "Temps de cerca en BST: " << ((double)t)/CLOCKS_PER_SEC << " segons" << endl;
-        cout << "Nombre de Movies trobades: " << count << endl;
+        cout << "Search time using BST: " << ((double)t)/CLOCKS_PER_SEC << " seconds" << endl;
+        cout << "Number of found movies: " << count << endl;
     }
     else {
         cout << "Could not open the specified file." << endl;
     }
 }
 
+/*Read data*/
 void llegirFitxerCerca(const AVLMovieFinder& avl) {
     ifstream file;
     string line, fileName = "data/cercaPelicules.txt";
@@ -104,8 +94,8 @@ void llegirFitxerCerca(const AVLMovieFinder& avl) {
         }
         t = (clock() - t);
         file.close();
-        cout << "Temps de cerca en AVL: " << ((double)t)/CLOCKS_PER_SEC << " segons" << endl;
-        cout << "Nombre de Movies trobades: " << count << endl;
+        cout << "Search time using AVL: " << ((double)t)/CLOCKS_PER_SEC << " seconds" << endl;
+        cout << "Number of found movies: " << count << endl;
     }
     else {
         cout << "Could not open the specified file." << endl;
@@ -118,7 +108,7 @@ void llegirFitxerCerca(const AVLMovieFinder& avl) {
  */
 int main(int argc, char** argv) {
     
-    cout << "OPERACIONS AMB FITXER PETIT: " << endl;
+    cout << "OPERATIONS WITH SMALL FILE: " << endl;
     cout << endl;
     
     BSTMovieFinder* bst = new BSTMovieFinder();
@@ -136,7 +126,7 @@ int main(int argc, char** argv) {
     delete avl;
     
     cout << endl;
-    cout << "OPERACIONS AMB FITXER GRAN: " << endl;
+    cout << "OPERATIONS WITH BIG FILE: " << endl;
     cout << endl;
     
     BSTMovieFinder* bst2 = new BSTMovieFinder();
