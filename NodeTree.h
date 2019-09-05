@@ -1,17 +1,3 @@
-/*
- * Estructura de Dades. Laboratori.
- * Pràctica 3: Arbres binaris
- */
-
-/* 
- * File:    NodeTree.h
- * Authors: Carla Morral, Oscar Lacasta
- */
-
-#ifndef NODETREE_H
-#define NODETREE_H
-
-
 template <class Type>
 class NodeTree {
     
