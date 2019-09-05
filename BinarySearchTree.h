@@ -1,13 +1,3 @@
-/*
- * Estructura de Dades. Laboratori.
- * Pràctica 3: Arbres binaris
- */
-
-/* 
- * File:    BinarySearchTree.h
- * Authors: Carla Morral, Oscar Lacasta
- */
-
 #ifndef BINARYSEARCHTREE_H
 #define BINARYSEARCHTREE_H
 
